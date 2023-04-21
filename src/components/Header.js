@@ -11,17 +11,19 @@ function Header() {
     const cars = useSelector(selectCars);
     return (
        <Container>
-           <a>
+           {/* <a> */}
                <img src="/images/logo.svg" alt=''/>
-           </a>
+           {/* </a> */}
            <Menu>
                 {cars && cars.map((car,index)=>(
                     <a key={index} href='#'>{car}</a>
                 ))}
+                <a href='#'>Sun Roof</a>
+                <a href='#'>Solar Panels</a>
            </Menu>
            <RightMenu>
                 <a href='#'>Shop</a>
-                <a href='#'>Tesla Account</a>
+                <a href='#'>Account</a>
                 <CustomMenu onClick ={()=>setBurgerStatus(true)}/>
            </RightMenu>
 
@@ -52,11 +54,17 @@ const Container = styled.div
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 20px;
+    padding: 0 40px;
     top: 0;
     left: 0;
     right: 0;
     z-index: 1;
+
+    img{
+        cursor: pointer;
+        width: 120px;
+        height: 20px;
+    }
 
 `
 const Menu = styled.div
@@ -67,7 +75,7 @@ const Menu = styled.div
     flex: 1;
 
     a{
-        font-weight: 600;
+        font-weight: 550;
         text-transform: uppercase;
         padding: 0 10px;
         flex-wrap: no-wrap;
@@ -82,7 +90,7 @@ const RightMenu = styled.div
     display: flex;
     align-tems: center;
     a{
-        font-weight: 600;
+        font-weight: 550;
         text-transform: uppercase;
         margin-right: 10px;
     }
@@ -113,7 +121,7 @@ const BurgerNav = styled.div
         border-bottom: 1px solid rgba(0, 0, 0, 0.2);
     }
     a{
-        font-weight: 600;
+        font-weight: 550;
 
     }
 `

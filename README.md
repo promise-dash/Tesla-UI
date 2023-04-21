@@ -1,3 +1,12 @@
+## Tesla UI (Starter Project)
+
+
+#### Built with Reactjs, Styled Components and Redux 
+
+<img width="946" alt="tesla" src="https://user-images.githubusercontent.com/86062880/233706771-c7fb28ab-f007-4c9b-bdb9-ba372f81fead.png">
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app), using the [Redux](https://redux.js.org/) and [Redux Toolkit](https://redux-toolkit.js.org/) template.
 
 ## Available Scripts
